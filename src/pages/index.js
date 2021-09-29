@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import perfil from "./ronin.png"
 
 const Container = styled.div`
   margin: 3rem auto;
@@ -23,6 +24,9 @@ const Avatar = styled.img`
   width: 96px;
   height: 96px;
   margin: 0;
+    &:nth-of-type(1) {
+      border-radius: 50px;
+  }
 `
 const Description = styled.div`
   flex 1;
@@ -39,6 +43,7 @@ const Excerpt = styled.p`
 const User = props => (
   <UserWrapper>
     <Avatar src={props.avatar} alt="" />
+    <Avatar src={props.avatar} alt="" />
     <Description>
       <Username>{props.username}</Username>
       <Excerpt>{props.excerpt}</Excerpt>
@@ -53,15 +58,23 @@ export default function UserList() {
       <p>mostrando algo com estilo</p>
       <User 
         username="Daniel Santos"
-        avatar="https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/128.jpg"
+        avatar= {perfil}
         excerpt="My name is Daniel an im from Brazil, Ibura!"
       />
 
       <User 
         username="Darline Cabral"
-        avatar="https://s3.amazonaws.com/uifaces/faces/twitter/avladarbatov/128.jpg"
+        avatar="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
         excerpt="My name is Daniel an im from Brazil, Ibura!"
       />
+
+      <User 
+        username="Iris Cabral de Oliveira"
+        avatar="https://t3.ftcdn.net/jpg/03/91/19/22/360_F_391192211_2w5pQpFV1aozYQhcIw3FqA35vuTxJKrB.jpg"
+        excerpt="My name is Daniel an im from Brazil, Ibura!"
+      />
+
+      
 
     </Container>
     )
