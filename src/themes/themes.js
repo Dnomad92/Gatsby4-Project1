@@ -1,3 +1,5 @@
+// import React from "react"
+
 export default {
 	fonts: {
 		main: "Muli, sans-serif",
@@ -15,7 +17,7 @@ export default {
 	breakpoints: {
 		mobile: "only screen and {max-width: 50rem}",
 		tablet: "only screen and {max-width: 65rem}",
-	}
+	},
 	spacings: {
 		xxSmall: ".25rem",
 		xSmall: ".5rem",
@@ -28,7 +30,7 @@ export default {
 	animations: {
 		button: "box-shadow 0.3s ease",
 		link: "color 0.2 ease",
-	}
+	},
 	shadows: {
 		shadow1: "0px 5px 20px rgba(30, 30, 31, 0.05)",
 	}

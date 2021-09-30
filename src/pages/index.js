@@ -1,4 +1,5 @@
 import React from "react"
+import Layout from "../components/layout"
 import styled from "styled-components"
 import perfil from "./ronin.png"
 
@@ -53,7 +54,12 @@ const User = props => (
 
 export default function UserList() {
   return (
+    
     <Container>
+      <Layout>
+        <h1>Texto dentro do Layout</h1>
+      </Layout>
+
       <h1>About Styled Components</h1>
       <p>mostrando algo com estilo</p>
       <User 
@@ -74,8 +80,11 @@ export default function UserList() {
         excerpt="My name is Daniel an im from Brazil, Ibura!"
       />
 
+    
       
 
     </Container>
+
+
     )
 }
